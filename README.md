@@ -45,22 +45,6 @@ Send a POST request to the `/api/chat` endpoint with the following JSON payload:
 }
 ```
 
-### Configuration
-
-Environment variables and Flask settings can be configured in a `.env` file. Common configurations include:
-- `FLASK_ENV=development`: For development mode.
-- `DEBUG=True`: To enable Flask debug mode.
-
-## Project Structure
-
-```
-.
-├── app.py               # Main Flask app
-├── requirements.txt     # Python dependencies
-├── templates/           # Flask HTML templates (if applicable)
-└── README.md            # Project documentation
-```
-
 ## Future Improvements
 
 - Integrate with the work management platform's task database for real-time task updates
