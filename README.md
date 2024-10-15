@@ -3,6 +3,8 @@
 
 This backend API powers a chatbot integrated into the [Work Management Platform](https://github.com/nmkha-github/TKPM), a team project built to help users manage tasks for teams effectively. The chatbot assists users by answering task-related queries, helping them manage workflows, and improving productivity.
 
+In this project, I have also provided an example of the front-end implementation for the chatbot used for experimentation. The front-end is built using **React** with Material-UI for styling, and it communicates with the backend through an API to fetch and respond to user queries.
+
 ## Features
 - Handle chat messages related to task and work management
 - Provide chatbot responses based on user input and task-related contexts
