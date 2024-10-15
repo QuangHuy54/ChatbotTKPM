@@ -22,8 +22,9 @@ In this project, I have also provided an example of the front-end implementation
 ### Prerequisites
 Ensure you have the following installed:
 - Python 3.x
-- Flask
-- Any virtual environment tool (e.g., `venv` or `virtualenv`)
+- Flask, Flask-Cors
+- Vertex AI SDK
+- Firebase Admin Python SDK
 
 ### Example Request
 
