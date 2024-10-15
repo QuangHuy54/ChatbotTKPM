@@ -6,8 +6,8 @@ This backend API powers a chatbot integrated into the [Work Management Platform]
 In this project, I have also provided an example of the front-end implementation for the chatbot used for experimentation. The front-end is built using React with Material-UI for styling, and it communicates with the backend through an API to fetch and respond to user queries.
 
 ## Features
-- Uilizes **Google Cloud Vertex AI** to interact with the powerful Gemini generative AI model 
-- Handle task-related chat messages using **function calling**, allowing the model to access external tools like Firebase Admin SDK.
+- Utilized **Google Cloud Vertex AI** to interact with the powerful Gemini generative AI model 
+- Handle task-related chat messages using **function calling**, allowing the model to access external tools like Firebase Admin SDK
 - Built with Flask and integrated with a React frontend
 - API endpoint to receive messages and process conversations
 
@@ -33,11 +33,11 @@ Send a POST request to the `/api/chat` endpoint with the following JSON payload:
 
 ```json
 {
-  "room_id": "12345",
-  "message": "What's my task for today?",
+  "user_id":"z3QKg4lNwdi9ZySG0QfJ"
+  "room_id": "WVo9e2P9zgJMQddmZzRC",
+  "message": "Can you tell me which tasks assigned to me are "In progress" ?",
   "history": [
-    {"role": "user", "text": "What are my tasks?"},
-    {"role": "bot", "text": "You have 3 tasks pending today."}
+    {"role": "model", "text": "Hello! How can I help you today?"},
   ]
 }
 ```
@@ -45,16 +45,12 @@ Send a POST request to the `/api/chat` endpoint with the following JSON payload:
 ### Example Response
 ```json
 {
-  "response": "Your task for today is to finalize the project report."
+  "response": "You have two tasks in progress: Design UI, which is due 19 October, 00:00; and Code UI, which is due 25 October, 00:00."
 }
 ```
 
 ## Future Improvements
 
-- Integrate with the work management platform's task database for real-time task updates
-- Add user authentication for personalized task management
-- Implement logging and advanced error handling
-- Incorporate NLP for more complex task queries
+- Adding additional features for function calling.
+- Improve the contextual prompt for the chatbot.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
