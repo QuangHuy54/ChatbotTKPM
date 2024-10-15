@@ -1,7 +1,7 @@
 
 # Work Management Chatbot Backend API
 
-This is the backend API for a chatbot integrated into a work management platform, built using Flask. The API handles chat messages from users, processes them, and returns appropriate responses. It aims to assist users in managing their tasks and work-related queries through the chatbot interface.
+This backend API powers a chatbot integrated into the [Work Management Platform](https://github.com/nmkha-github/TKPM), a team project built to help users manage their tasks effectively. The chatbot assists users by answering task-related queries, helping them manage workflows, and improving productivity.
 
 ## Features
 - Handle chat messages related to task and work management
