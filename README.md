@@ -35,7 +35,7 @@ Send a POST request to the `/api/chat` endpoint with the following JSON payload:
 {
   "user_id":"z3QKg4lNwdi9ZySG0QfJ"
   "room_id": "WVo9e2P9zgJMQddmZzRC",
-  "message": "Can you tell me which tasks assigned to me are "In progress" ?",
+  "message": "Can you tell me which tasks assigned to me are 'In progress' ?",
   "history": [
     {"role": "model", "text": "Hello! How can I help you today?"},
   ]
