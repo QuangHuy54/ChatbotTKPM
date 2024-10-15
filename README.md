@@ -6,11 +6,12 @@ This backend API powers a chatbot integrated into the [Work Management Platform]
 In this project, I have also provided an example of the front-end implementation for the chatbot used for experimentation. The front-end is built using React with Material-UI for styling, and it communicates with the backend through an API to fetch and respond to user queries.
 
 ## Features
+- Uilizes **Google Cloud Vertex AI** to interact with the powerful Gemini generative AI model 
 - Handle chat messages related to task and work management
 - Provide chatbot responses based on user input and task-related contexts
 - Built with Flask and integrated with a React frontend
 - API endpoint to receive messages and process conversations
-- Uilizes **Google Cloud Vertex AI** to interact with the powerful Gemini generative AI model 
+
 
 ## Tech Stack
 - **Backend**: Flask (Python), Vertex AI
