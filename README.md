@@ -15,7 +15,7 @@ In this project, I have also provided an example of the front-end implementation
 - **Backend**: Flask (Python)
 - **Frontend**: React (integrated separately within the work management platform)
 - **API Requests**: Axios for communication between the frontend chatbot and backend
-- **Database**: (Optional) For persistent chat history or work data integration
+- **Database**: Firebase Cloud Firestore
 
 ## Getting Started
 
