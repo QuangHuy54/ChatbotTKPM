@@ -10,6 +10,7 @@ In this project, I have also provided an example of the front-end implementation
 - Provide chatbot responses based on user input and task-related contexts
 - Built with Flask and integrated with a React frontend
 - API endpoint to receive messages and process conversations
+- Uilizes Google Cloud Vertex AI to interact with the powerful Gemini generative AI model 
 
 ## Tech Stack
 - **Backend**: Flask (Python), Vertex AI
