@@ -23,37 +23,6 @@ Ensure you have the following installed:
 - Flask
 - Any virtual environment tool (e.g., `venv` or `virtualenv`)
 
-### Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
-
-2. **Create a virtual environment**:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Running the API
-
-1. **Start the Flask server**:
-   ```bash
-   flask run
-   ```
-
-   The API will be available at `http://127.0.0.1:5000`.
-
-2. **Endpoint**:
-   - POST `/api/chat`: Sends a chat message related to task management and receives a bot response.
-
 ### Example Request
 
 Send a POST request to the `/api/chat` endpoint with the following JSON payload:
