@@ -5,6 +5,8 @@ This backend API powers a chatbot integrated into the [Work Management Platform]
 
 In this project, I have also provided an example of the front-end implementation for the chatbot used for experimentation. The front-end is built using React with Material-UI for styling, and it communicates with the backend through an API to fetch and respond to user queries.
 
+![Chatbot Interface](images/examples_1.png)
+
 ## Features
 - Utilized **Google Cloud Vertex AI** to interact with the powerful Gemini generative AI model 
 - Handle task-related chat messages using **function calling**, allowing the model to access external tools like Firebase Admin SDK
