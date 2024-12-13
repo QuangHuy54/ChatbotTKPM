@@ -8,14 +8,17 @@ In this project, I have also provided an example of the front-end implementation
 ![Example_1](images/example.png)
 
 ## Features
-- Utilized **Google Cloud Vertex AI** to interact with the powerful Gemini generative AI model 
-- Handle task-related chat messages using **function calling**, allowing the model to access external tools like Firebase Admin SDK
-- Built with Flask and integrated with a React frontend
+- Utilized **Google Cloud Vertex AI** to interact with the powerful Gemini generative AI model
+- Supports a **multi-agent architecture**:
+  - Handle task-related chat messages using **function calling**, allowing the model to access external tools like Firebase Admin SDK
+  - Another agent employs **Retrieval-Augmented Generation (RAG)** to provide accurate and context-specific guidance for users.
+- Built with FastAPI for a high-performance backend and integrated with a React frontend
 - API endpoint to receive messages and process conversations
 
 
 ## Tech Stack
-- **Backend**: Flask (Python), Vertex AI
+- **Backend**: FastAPI
+- **Chatbot**: LangChain, LangGraph, Vertex AI
 - **Frontend**: React (integrated separately within the work management platform)
 - **API Requests**: Axios for communication between the frontend chatbot and backend
 - **Database**: Firebase Cloud Firestore
@@ -25,7 +28,8 @@ In this project, I have also provided an example of the front-end implementation
 ### Prerequisites
 Ensure you have the following installed:
 - Python 3.x
-- Flask, Flask-Cors
+- FastAPI
+- LangChain, LangGraph
 - Vertex AI SDK
 - Firebase Admin Python SDK
 
@@ -52,7 +56,6 @@ Send a POST request to the `/api/chat` endpoint with the following JSON payload:
 ```
 
 ## Future Improvements
-
 - Adding additional features for function calling.
 - Improve the contextual prompt for the chatbot.
 
