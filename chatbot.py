@@ -1,16 +1,13 @@
 from firebase_admin import credentials
-from firebase_admin import firestore
 import firebase_admin
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import vertexai
 
 cred = credentials.Certificate("firebase.json")
 firebase_admin.initialize_app(cred)
 app = FastAPI()
 PROJECT_ID = "chatbot-437514"  # @param {type:"string"}
 LOCATION = "us-central1"  # @param {type:"string"}
-vertexai.init(project=PROJECT_ID, location=LOCATION)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=['*'],
@@ -18,25 +15,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-from flask import Flask,request,jsonify
-from flask_cors import CORS
-from datetime import datetime
-import json
-import datetime
-import requests
 from pydantic import BaseModel
-from vertexai.preview.generative_models import (
-    FunctionDeclaration,
-    GenerationConfig,
-    GenerativeModel,
-    Part,
-    GenerationResponse,
-    Content,
-    Tool,
-)
 import database_agent as database_agent
 from multi_agent_graph import State,graph
-from langchain_core.messages import HumanMessage, AIMessage, BaseMessage
+from langchain_core.messages import HumanMessage, AIMessage
 
 
 #cors = CORS(app, resources={r"/api/*": {"origins": "*"}})

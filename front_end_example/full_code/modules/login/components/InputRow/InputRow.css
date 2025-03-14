@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind forms;
+.input:focus{
+    border-color: #0a66c2;
+    --tw-ring-color:#0a66c2;
+}
+::placeholder{
+    font-weight: 300;
+}
+#showHideButton{
+    color: #006097;
+}
+#showHideButton:hover{
+    background-color: rgba(152,216,244,0.5);
+    color: #006097;
+}

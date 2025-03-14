@@ -1,0 +1,78 @@
+h2{
+    margin-top: 1rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.back_to_workspace{
+    position:absolute;
+    margin-top: 0.1rem;
+    margin-left: 0.625rem;
+    font-size: 1rem;
+    color: black;
+    display: inline;
+}
+.room_name{
+    font-size: 1.25rem;
+}
+h3{
+    font-weight: 500; 
+}
+.setting_description{
+    display: inline;
+    position:absolute;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem; 
+}
+.setting_row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.avatar_change{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-color: black;
+    padding:0px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 20rem;
+    font-size: 1.875rem;
+    font-weight:500;
+    border-radius: 1rem;
+    position: relative;
+}
+.add_icon{
+    align-self: flex-start;
+}
+.switch_icon{
+    align-self:flex-end;
+}
+h5{
+    margin-left: 0.625rem;
+    margin-bottom:0.625rem;
+    
+}
+.image{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.change_image{
+    position: absolute;
+    visibility: hidden;
+} 
+.avatar_change:hover>.change_image{
+    visibility: visible;
+}
+.avatar_change:hover>.image{
+    opacity: 0.2;
+}
