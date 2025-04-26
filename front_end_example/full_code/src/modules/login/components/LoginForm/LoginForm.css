@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind forms;
+#submitButton{
+    background-color: #0a66c2;
+    border-radius: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color:white;
+    text-transform: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    
+}
+#seperator_login_register{
+   padding:0 4px;
+   color: rgba(0,0,0,0.6);
+}
+#seperator_login_register::before,#seperator_login_register::after{
+    height: 1px;
+    background-color: rgba(0,0,0,0.25);
+    width: 50%;
+    content:"";
+}
+#createNewAccountButton{
+    border-color: #0a66c2;
+    color: #0a66c2;
+}
+#remember-me:focus{
+    --tw-ring-color: #0a66c2;
+}

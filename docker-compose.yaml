@@ -1,0 +1,18 @@
+services:
+  backend:
+    build:
+      context: ./front_end_example/full_code/src/chatbot_backend
+      dockerfile: ../../../../docker/backend.dockerfile
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./front_end_example/full_code
+      dockerfile: ../../docker/frontend.dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    stdin_open: true
+    tty: true

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind forms;
+
+#seperator_login_register{
+   padding:0 4px;
+   color: rgba(0,0,0,0.6);
+}
+#seperator_login_register::before,#seperator_login_register::after{
+    height: 1px;
+    background-color: rgba(0,0,0,0.25);
+    width: 50%;
+    content:"";
+}
+
+#remember-me:focus{
+    --tw-ring-color: #0a66c2;
+}
