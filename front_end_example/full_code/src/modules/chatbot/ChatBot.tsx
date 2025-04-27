@@ -37,6 +37,14 @@ const ChatBubble = styled(Paper)(({ sender }: { sender: "user" | "bot" }) => ({
   },
 }));
 
+declare var process : {
+  env: {
+    REACT_APP_BACKEND_SERVER_URL: string
+  }
+}
+
+
+
 const Chatbot: React.FC = () => {
   const { isOpen } = useChatbot();
   const [messages, setMessages] = useState<Message[]>([
@@ -50,6 +58,7 @@ const Chatbot: React.FC = () => {
   const [isTyping, setIsTyping] = useState<boolean>(false);
   const { currentRoom } = useRooms();
   const { user } = useUser();
+  const SERVER_URL = process.env.REACT_APP_BACKEND_SERVER_URL || 'localhost:8000';
 
   // Ref to keep track of the chat list container for scrolling
   const chatContainerRef = useRef<HTMLDivElement | null>(null);
@@ -73,7 +82,7 @@ const Chatbot: React.FC = () => {
     setMessages((prevMessages) => [...prevMessages, userMessage]);
     try{
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/chat",
+        `http://${SERVER_URL}/api/chat`,
         {
           user_id: user?.id||"",
           room_id: currentRoom.id||"",
