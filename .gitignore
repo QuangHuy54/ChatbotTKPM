@@ -220,4 +220,4 @@ firebase.json
 
 report.pdf
 
-persist_vector_store
+.persist_vector_store
