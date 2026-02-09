@@ -22,17 +22,6 @@ const FirebaseConfig = {
   measurementId: "",
 };
 
-//Backup firebase
-// const FirebaseConfig = {
-//   apiKey: "AIzaSyDv-o8TSczjA8RiXCpNbuOKS9xgiSKeR9w",
-//   authDomain: "nmcnpm-backup.firebaseapp.com",
-//   projectId: "nmcnpm-backup",
-//   storageBucket: "nmcnpm-backup.appspot.com",
-//   messagingSenderId: "904397447943",
-//   appId: "1:904397447943:web:774d81784b3d4b4c0bdba2",
-//   measurementId: "G-05YQ0V4WBP",
-// };
-
 const app = initializeApp(FirebaseConfig);
 // Initialize Performance Monitoring and get a reference to the service
 const perf = getPerformance(app);

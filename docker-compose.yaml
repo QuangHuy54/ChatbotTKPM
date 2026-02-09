@@ -1,8 +1,8 @@
 services:
   backend:
     build:
-      context: ./front_end_example/full_code/src/chatbot_backend
-      dockerfile: ../../../../docker/backend.dockerfile
+      context: .
+      dockerfile: ./docker/backend.dockerfile
     ports:
       - "8000:8000"
 

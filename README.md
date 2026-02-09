@@ -9,7 +9,7 @@ In this project, I have also provided an example of the front-end implementation
 ![Example_2](images/example_2.png)
 
 ## Features
-- Utilized **Google Cloud Vertex AI** to interact with the powerful Gemini generative AI model
+- Utilized **OpenAI API** to interact with the powerful GPT generative AI model
 - Supports a **multi-agent architecture**:
   - Handle task-related chat messages using **function calling**, allowing the model to access external tools like Firebase Admin SDK
   - Another agent employs **Retrieval-Augmented Generation (RAG)** to provide accurate and context-specific guidance for users.
@@ -19,7 +19,7 @@ In this project, I have also provided an example of the front-end implementation
 
 ## Tech Stack
 - **Backend**: FastAPI
-- **Chatbot**: LangChain, LangGraph, Vertex AI
+- **Chatbot**: LangChain, LangGraph, OpenAI API
 - **Frontend**: React (integrated separately within the work management platform)
 - **API Requests**: Axios for communication between the frontend chatbot and backend
 - **Database**: Firebase Cloud Firestore
@@ -30,8 +30,8 @@ In this project, I have also provided an example of the front-end implementation
 Ensure you have the following installed:
 - Python 3.x
 - FastAPI
-- LangChain, LangGraph
-- Vertex AI SDK
+- LangChain, LangGraph, LangSmith SDK
+- OpenAI SDK
 - Firebase Admin Python SDK
 
 ### Example Request
@@ -56,7 +56,14 @@ Send a POST request to the `/api/chat` endpoint with the following JSON payload:
 }
 ```
 
-## Future Improvements
-- Adding additional features for function calling.
-- Improve the contextual prompt for the chatbot.
+## Evaluation
 
+I have integrated **LangSmith** to provide comprehensive evaluation capabilities for the chatbot. This allows for:
+
+- **Automatic Tracing**: Trace all LangGraph/LangChain operations.
+- **Custom Evaluators**: Measure response quality, agent routing, and tool usage.
+- **Test Datasets**: Manage and run test cases to ensure reliability.
+
+To run evaluations, you can use the provided API endpoints or CLI commands.
+
+![Example_3](images/example_3.png)
