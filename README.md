@@ -16,10 +16,12 @@ This project also includes an experimental React frontend (styled with Material-
 - Built with FastAPI for a high-performance backend and integrated with a React frontend
 - API endpoint to receive messages and process conversations
 
+## System Overview
+![Example_1](images/system_overview.png)
 
 ## Tech Stack
 - **Backend**: FastAPI
-- **Chatbot**: LangChain, LangGraph, OpenAI API
+- **Chatbot**: LangChain, LangGraph, LangSmith, OpenAI API
 - **Frontend**: React (integrated separately within the work management platform)
 - **API Requests**: Axios for communication between the frontend chatbot and backend
 - **Database**: Firebase Cloud Firestore
